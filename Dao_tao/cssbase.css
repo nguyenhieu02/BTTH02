@@ -1,0 +1,50 @@
+.grid {
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+
+.grid.wide {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@keyframes spread{
+    from{
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes un-spread{
+    from{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to{
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+}
+
+@keyframes img-animation{
+    from{
+        transform: scale(1, 1);
+    }
+    to{
+        transform: scale(1.05, 1.05);
+    }
+}
+
+@keyframes un-img-animation{
+    from{
+        transform: scale(1.05, 1.05);
+    }
+    to{
+        transform: scale(1, 1);
+    }
+}

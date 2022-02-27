@@ -1,0 +1,703 @@
+html{
+    font-family: 'Archivo', sans-serif;
+}
+
+.header{
+    height: 90px;
+    background-color: #FEFEFE;
+    box-shadow: 1px 2px 11px rgba(0, 0, 0, 0.3);
+}
+.header-wraper{
+    display: flex;
+}
+
+.header-wraper__logolink img{
+    width: 244px;
+    margin-top: 12px;
+}
+.header-wraper__nav{
+    width: 100%;
+    line-height: 90px;
+}
+.header-wraper__nav-list{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 38px;
+    font-weight: 600;
+}
+.header-wraper-item{
+    
+    position: relative;
+}
+.header-wraper-item__link{
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 15px;
+   display: block;
+}
+.header-subnav-list{
+    display: none;  
+    position: absolute;
+    background-color: #F0F0F0;
+    width: 222px;
+    box-shadow: -1px 1px 2px rgb(0 0 0 / 19%);
+    top: 67px;
+    left: -16px;
+    transform-origin: top;
+    animation: un-spread 0.3s linear;
+}
+.header-wraper-item:hover .header-subnav-list{
+    display: block;
+    animation: spread 0.3s linear forwards;
+
+}
+
+
+.header-subnav-item{
+    height: 40px;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #707073;
+    position: relative;
+}
+.header-subnav-item:last-child,.header-subsubnav-item:last-child{
+    border: none;
+}
+.header-subnav-item__link{
+    text-decoration: none;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 500;
+    position: relative;
+    top: -25px;
+    padding: 7px 0px 7px 10px;
+    font-size: 14px;
+    color: #000000;
+
+}
+
+.header-subnav-item__link:hover,.header-subsubnav-link:hover{
+    color: #0B249E;
+}
+
+.header-icon-subnav{
+    position: absolute;
+    top: -3px;
+    margin-left: 64px;
+}
+.header-subsubnav-list{
+    position: absolute;
+    width: 222px;
+    box-shadow: -1px 1px 2px rgb(0 0 0 / 19%);
+    top: -3px;
+    left: 223px;
+    background-color: #F0F0F0;
+    display: none;
+    /* transform: scaleY(0); */
+    transform-origin: top;
+    animation: un-spread 0.3s linear;
+}
+.header-subnav-item:hover .header-subsubnav-list{
+    display: block;
+    animation: spread 0.3s linear forwards;
+}
+.header-subsubnav-item{
+    height: 40px;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #707073;
+}
+.header-subsubnav-link{
+    text-decoration: none;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 500;
+    position: relative;
+    top: -25px;
+    padding: 7px 0px 7px 10px;
+    font-size: 14px;
+    color: #000000;
+}
+
+
+/* content-img */
+.content-img img{
+    width: 100%;
+    height: auto;
+}
+
+/* thông tin khóa học và lí do nên học */
+
+.good-course{
+    margin-top: 88px;
+}
+.good-course__info{
+    display: flex;
+}
+.good-course-img img{
+    height: 382px;
+    width: 446px;
+}
+.good-course-content{
+   margin: 23px 0 0 38px;
+}
+.good-course-content p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 20px;
+    font-size: 15px;
+    line-height: 27px;
+    text-align: justify;
+    word-spacing: 0;
+}
+.good-course__reason{
+    margin-top: 112px;
+}
+.good-course__reason-title{
+    text-align: center;
+    color: #000000;
+    font-family: "Arial", Sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+.good-course__reason-box{
+    display: flex;
+    margin-top: 70px;
+}
+.good-course-minbox{
+    border: 2px solid #0B249E;
+    flex-basis: 33.333%;
+    margin: 0 50px 0;
+    border-radius: 10px;
+}
+.good-course-minminbox{
+    padding: 20px;
+}
+.good-course-minbox__img{
+    width: 73px;
+    height: 61px;
+    margin-left: 91px;
+    animation: un-img-animation 0.3s linear;
+   
+}
+.good-course-minbox__headcontent{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    color: #0B249E;
+    margin: 20px 0;
+    text-align: center;
+}
+.good-course-minbox__footcontent{
+    font-size: 15px;
+    font-weight: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 27px;
+    text-align: center;
+}
+ .good-course-minbox__img:hover{
+    animation: img-animation 0.3s linear forwards;
+} 
+
+/* Vị trí công việc */
+
+.job-position{
+
+    margin-top: 93px;
+    background-image: linear-gradient(180deg, #0A2E9E 0%, #780BBD 100%);
+}
+
+.job-position__header{
+    color: #FFF;
+    font-family: "Arial", Sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 96px 0;
+}
+
+.job-position-minbox{
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 1px;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid #FFF;
+}
+.job-position__img{
+    width: 100%;
+    height: 188px;
+    animation: un-img-animation 0.3s linear;
+}
+.job-position__img:hover{
+    animation: img-animation 0.3s linear forwards;
+}
+.job-position-content:hover{
+    
+    color: #2426A5;
+    cursor: pointer;
+}
+.job-position-content{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: center;
+}
+.job-position-footcontent{
+    font-size: 17px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    color: #FFF;
+    text-align: center;
+    margin: 34px 0 20px;
+    
+}
+.job-position-btn{
+    font-size: 17px;
+    font-weight: 700;
+    padding: 10px 16px;
+    background-color: transparent;
+    border: 3px solid #FFF;
+    color: #FFF;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-top: 36px;
+    margin-bottom: 109px;
+}
+.job-positio-icon{
+    font-size: 20px;
+    margin-left: 6px;
+}
+.job-position-btn__box{
+    text-align: center;
+}
+.job-position-btn{
+   
+    animation: un-img-animation 0.3s linear;
+
+}
+
+.job-position-btn:hover{
+    animation: img-animation 0.3s linear forwards;
+    background-color: #FF7B06;
+    cursor: pointer;
+}
+.job-position-box__container{
+    display: flex;
+    justify-content: center;
+}
+
+.box-container__inner{
+    width: 270px;
+    padding: 0 11px;
+}
+
+/* Đối tượng tham gia khóa học */
+
+
+.Object-content{
+    font-family: "Arial", Sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 83px 0 39px;
+}
+.Object-container{
+    display: flex;
+}
+.Object-container__inner{
+    border: 1px solid #E1E0E0;
+    margin: 0 16px;
+    width: 33.3333%;
+}
+.Object-box{
+    padding: 18px;
+}
+.Object-box-img{
+    width: 100%;
+}
+.Object-content-footer span{
+    display: block;
+    font-size: 16px;
+    font-weight: 599;
+    line-height: 23px;
+    text-align: center;
+}
+.Object-content-footer{
+    padding: 13px 15px 37px 14px;
+}
+/* Form đăng kí và thông tin chỗ học */
+
+.registration{
+    background-image: linear-gradient(180deg, #08219F 0%, #2102D5 100%);
+    color: white;
+    margin-top: 76px;
+}
+.registration-container{
+    display: flex;
+}
+.registration-form{
+    width: 50%;
+}
+
+.registration-form-content1{
+    font-family: "Arial", Sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 83px 0 23px;
+    color: #F7FD09;
+}
+.registration-form-content2{
+    color: var( --e-global-color-2f63c289 );
+    margin: 0 0 25px;
+    font-family: "Arial", Sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.registration-form-box{
+    margin-top: 46px;
+}
+.registration-btn{
+    display: block;
+    width: 491px;
+    height: 46px;
+    border: none;
+    outline: none;
+    padding: 0 18px;
+    margin-left: 52px;
+    background-color: #EDEDED;
+    font-size: 17px;
+    border-radius: 5px;
+    margin: 19px 53px;
+    background-color: #EDB017;
+    margin-top: 46px;
+    margin-bottom: 72px;
+    text-transform: uppercase;
+}
+.registration-btn:hover{
+    background-color: #008FBA;
+    color: #FFF;
+}
+
+.registration-btn-link{
+    text-decoration: none;
+    text-decoration: none;
+    color: #333331;
+    font-size: 16px;
+    font-weight: 600;
+}
+.registration-info{
+    width: 50%;
+    margin-top: 73px;
+    margin-left: 52px;
+}
+
+.registration-info-content1{
+    
+    padding: 11px 0;
+}
+.registration-info-content1 i{
+    color: #FFFD09;
+    font-size: 19px;
+}
+.registration-info-content1 span{
+    padding-left: 11px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 28.8px;
+    text-align: left;
+    word-spacing: 0;
+}
+.registration-info-oclock{
+    margin: 20px 0 10px 13px;
+}
+.registration-info-oclock i{
+    font-size: 14px;
+}
+
+
+.name,.email,.phone,.dress,.form-select{
+    display: block;
+    width: 491px;
+    height: 39px;
+    border: none;
+    outline: none;
+    padding: 0 18px;
+    margin-left: 52px;
+    background-color: #EDEDED;
+    color: #333333;
+    font-size: 17px;
+    border-radius: 2px;
+    margin: 19px 53px;
+}
+
+.registration-info-oclock__icon{
+    padding: 10px 10px;
+
+}
+
+/* Nội dung khóa học */
+
+.content-course{
+    background-color: #EAEAEA;
+}
+
+.content-course-header h1{
+    font-family: "Arial", Sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 100px 0 0 0 ;
+
+}
+
+.content-course-container{
+    display: flex;
+    padding: 0 0 46px 0;
+}
+.content-course-img{
+    width: 50%;
+}
+.content-course-img img{
+    width: 81%;
+    max-width: 100%;
+    margin-left: 70px;
+}
+.content-course-info{
+    width: 50%;
+    margin-top: 38px;
+}
+
+.content-course-info1 span{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 44.4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content-course-tuition{
+    margin-top: 27px;
+    position: relative;
+}
+.content-course-tuition p{
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.content-course-tuition ul{
+    margin-left: 23px;
+    font-size: 16px;
+    margin-top: 13px;
+    list-style: disc;
+    display: none;
+}
+.content-course-tuition ul li{
+    padding: 6px 0;
+}
+
+.content-course-tuition p:hover ~ ul{
+    display: block;
+}
+/* ĐỐi tác của hà nội aptech */
+
+.friend-container{
+    position: relative;
+    padding: 0 0 115px 0;
+}
+
+.friend-content h1{
+    font-family: "Arial", Sans-serif;
+    font-size: 29px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 49px 0 85px;
+}
+.friend-logo{
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    padding: 0 16px;
+    transition: 0.5s;
+}
+.friend-logo-img{
+    padding: 0px 44px;
+}
+.friend-logo-img img{
+    width: 200px;
+    height: auto;
+}
+.gallery{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 30px;
+    cursor: pointer;
+    height: 72%;
+    align-items: center;
+}
+.control1{
+    margin-left: 18px;
+} 
+
+.control2 i{
+    margin-right: 18px;
+}
+/* FOOTER */
+
+.footer{
+    background-color: #2F319E;
+}
+.footer-container{
+    display: flex;
+    padding-top: 68px;
+}
+.footer-box1{
+    width: 33.333%;
+    color: #FFFFF9
+}
+.footer-box1-title{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.footer-box1-content{
+    display: block;
+    padding: 20px 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.footer-box1-content span{
+    margin-left: 5px;
+} 
+.footer-box1-content i{
+    font-size: 14px;
+}
+.footer-box1-logo{
+    position: relative;
+}
+.footer-box1-logo__tiger{
+    width: 311px;
+    height: 95px;
+}
+.footer-box1-Hanoiaptech{
+    position: absolute;
+    left: 9px;
+    top: 7px;
+    display: flex;
+}
+.footer-box1-Hanoiaptech__img{
+    width: 53px;
+    height: 51px;
+    border: 1px solid #333;
+    outline: 2px solid;
+}
+
+.footer-box1-name__link{
+    color: #FFFF;
+    font-size: 19px;
+    text-decoration: none;
+    margin-left: 7px;
+    text-shadow: 1px 0 4px black;
+}
+.footer-box1-name__link:hover{
+    color: #FFFF;
+    text-decoration: underline;
+}
+.footer-box1-name__like{
+    display: block;
+    color: #FFFF;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 7px;
+    text-shadow: 1px 0 4px black;
+}
+.footer-box2{
+    width: 33.333%;
+}
+.footer-box2-title{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.footer-box2-content{
+    display: block;
+    padding: 20px 4px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFF;
+    line-height: 26px;
+}
+
+.footer-box3{
+    width: 33.333%;
+}
+.footer-box3-title{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #FFF;
+    margin-left: 53px;
+}
+
+.footer-box3-wrapper input{
+    width: 100%;
+}
+.footer-box3-btn__link{
+    text-decoration: none;
+}
+.inputfooter{
+    width: 100%;
+}
+
+.test{
+    height: 1000px;
+
+
+}
+
+.footer-box3-btn__link button{
+    display: block;
+    width: 406px;
+    height: 46px;
+    border: none;
+    outline: none;
+    padding: 0 18px;
+    margin-left: 52px;
+    background-color: #EDEDED;
+    font-size: 17px;
+    border-radius: 5px;
+    margin: 19px 53px;
+    background-color: #EDB017;
+    margin-top: 46px;
+    margin-bottom: 72px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.footer-box3-btn__link button:hover{
+    background-color: #008FCA;
+    color: #FFFFFF;
+}
+
+
+
+
+
